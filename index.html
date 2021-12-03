@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Sixteen Personalities</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- https://ar-js-org.github.io/AR.js-Docs/-->
+<!--Note to self: In order for this code  to work, the following things are required for the gltf-model:
+The entire folder with scene.bin and scene.gltf must be uploaded to GitHub
+The URL must include https
+The URL must start with https://arjs-cors-proxy.herokuapp.com/
+Check that gltf is working at https://gltf-viewer.donmccurdy.com/
+-->
+
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <!--Pattern Marker Example Use this Marker Generator https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html-->
+
+      <!--Zeroeth Marker logo and 3D model-->
+<a-marker type='pattern' url='https://github.com/djbarre2/augmentedrealitybook/blob/main/pattern-1.patt'>
+        <a-entity
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.005 0.005 0.005"
+          gltf-model="https://github.com/djbarre2/ar.js/blob/main/rocky_the_rockstar/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      
+      
+      <!--First Marker INTJ and Image Overlay-->
+      
+      <a-marker type='pattern' url='https://github.com/djbarre2/augmentedrealitybook/blob/main/pattern-2.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://github.com/djbarre2/augmentedrealitybook/blob/main/pattern-2.png"></a-image> 
+</a-marker>
+
+        
+       
+        <!--Image Example (must be a .png; the .jpg just shows up as white square, you can also modify width="200" height="100" added after src="" but before>)-->
+
+      
+        <!--3D Model Example-->
+
+   <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-2.patt'>
+     <a-text value="Introverted | Intuitive \n      Thinking     | Perceiving" color="#006F71" position="-1 0 1" rotation="-90 0 0"></a-text>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/intp-logician.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-3.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/entj-commander.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-4.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/entp-debater.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-5.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/infj-advocate.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-6.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/infp-mediator.png"></a-image> 
+</a-marker>
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-7.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/enfj-protagonist.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-8.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/enfp-campaigner.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-9.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/istj-logistician.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-10.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/isfj-defender.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-11.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/estj-executive.png"></a-image> 
+</a-marker>
+      
+               <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-12.patt'>
+                 <a-text value="Extroverted | Sensing \n      Feeling        | Judging" color="#006F71" position="-1 0 1" rotation="-90 0 0"></a-text>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/esfj-consul.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-13.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/istp-virtuoso.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-14.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/isfp-adventurer.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-15.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/estp-entrepreneur.png"></a-image> 
+</a-marker>
+      
+      
+      
+         <a-marker type='pattern' url='https://makeademic.github.io/SixteenPersonalities/pattern-16.patt'>
+   <a-image position="0 0 0" rotation="-90 0 0" src="https://makeademic.github.io/SixteenPersonalities/esfp-entertainer.png"></a-image> 
+</a-marker>
+      
+      
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+<!-- partial -->
+  
+</body>
+</html>
